@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    background-color: #f7ecde;
+}
+h1{
+    color: #352e28;
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    width: fit-content;
+    z-index: 111111;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25%;
+   background-color: #fec260;
+   z-index: -1;
+   transition: height 0.5s;
+}
+h1:hover::before{
+    height: 50%;
+}
+
+.bookmark h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ .form-control:focus { 
+    border-color: #d99c39 !important;
+    box-shadow: 0 0 0 0.25rem #fec26055 !important;
+}
+.bookmark .btn-submit{
+    background-color: #d1512d;
+    color: #fff;
+    transition: 0.5s;
+}
+.bookmark .btn-submit:hover{
+    background-color: #bb4120;
+}
+table .btn-visit{
+    background-color: #9eb23b;
+    color: #fff !important;
+    transition:  0.5s;
+}
+table .btn-visit:hover{
+    background-color: #8a9e23;
+}
+table .btn-delete{
+    background-color: #eb1d36;
+    color: #fff !important;
+    transition: 0.5s;
+}
+table .btn-delete:hover{
+    background-color: #d30820;
+}
+@media (max-width:767px) {
+.bookmark h2{
+    font-size: 20px;
+}
+.container-md{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}    
+}
+@media (max-width:427px) {
+th{
+    font-size: 15px;
+}
+}  
+@media (max-width:390px) {
+.bookmark h2{
+    font-size: 16px;
+}
+th{
+    font-size: 13px;
+}
+}  
+
